@@ -1,4 +1,4 @@
-#EMStudio
+# EMStudio
 
 Written by Michael Carpenter (malcom2073@gmail.com), and licensed under GPLv2.
 
@@ -38,6 +38,6 @@ machine configurations to do any real support. If someone is interested in maint
 work through it with you, but it's too much of a mess to provide general support. I'll handle compiling binaries for now.
 
 
-##More Information
+## More Information
 
 http://malcom2073.github.com/emstudio/
