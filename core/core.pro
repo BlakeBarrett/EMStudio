@@ -19,17 +19,17 @@ DEPENDPATH += $$PWD/../lib/core
 
 win32-x-g++ { #Linux based crossplatform 32bit build
         message("Building for win32-x-g++")
-	INCLUDEPATH += /home/michael/QtWin32/libs/qwt/include /home/michael/QtWin32/libs/qjson/include
-	LIBS += -L/home/michael/QtWin32/libs/qwt/lib -lqwt -L/home/michael/QtWin32/libs/qjson/lib -lqjson
-	LIBS += -L/home/michael/QtWin32/lib
+	INCLUDEPATH += $$PWD/libs/qwt/include $$PWD/libs/qjson/include
+	LIBS += -L$$PWD/libs/qwt/lib -lqwt -L$$PWD/libs/qjson/lib -lqjson
+	LIBS += -L$$PWD/lib
         DEFINES += GIT_COMMIT=$$system(git describe --dirty=-DEV --always)
         DEFINES += GIT_HASH=$$system(git log -n 1 --pretty=format:%H)
         QMAKE_LFLAGS += -static-libgcc -static-libstdc++
 } else:win64-x-g++ { #Linux based crossplatform 64bit build
         message("Building for win64-x-g++")
-        INCLUDEPATH += /home/michael/QtWin64/libs/qwt/include /home/michael/QtWin64/libs/qjson/include
-        LIBS += -L/home/michael/QtWin64/libs/qwt/lib -lqwt -L/home/michael/QtWin64/libs/qjson/lib -lqjson
-        LIBS += -L/home/michael/QtWin64/lib
+        INCLUDEPATH += $$PWD/libs/qwt/include $$PWD/libs/qjson/include
+        LIBS += -L$$PWD/libs/qwt/lib -lqwt -L$$PWD/libs/qjson/lib -lqjson
+        LIBS += -L$$PWD/lib
         DEFINES += GIT_COMMIT=$$system(git describe --dirty=-DEV --always)
         DEFINES += GIT_HASH=$$system(git log -n 1 --pretty=format:%H)
         QMAKE_LFLAGS += -static-libgcc -static-libstdc++

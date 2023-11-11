@@ -74,22 +74,22 @@ Section "Qt Components"
 
   SetOutPath $INSTDIR
 
-  File /home/michael/QtWin32/lib/QtCore4.dll
-  File /home/michael/QtWin32/lib/QtGui4.dll
-  File /home/michael/QtWin32/lib/QtOpenGL4.dll
-  File /home/michael/QtWin32/lib/QtSvg4.dll
-  File /home/michael/QtWin32/lib/QtDeclarative4.dll
-  File /home/michael/QtWin32/lib/QtGui4.dll
-  File /home/michael/QtWin32/lib/QtNetwork4.dll
-  File /home/michael/QtWin32/lib/QtScript4.dll
-  File /home/michael/QtWin32/lib/QtSql4.dll
-  File /home/michael/QtWin32/lib/QtXml4.dll
-  File /home/michael/QtWin32/lib/QtXmlPatterns4.dll
-  File /home/michael/QtWin32/libs/qwt/bin/qwt.dll
-  File /home/michael/QtWin32/libs/qjson/bin/qjson.dll
-  File /home/michael/QtWin32/lib/libgcc_s_sjlj-1.dll
-  File /home/michael/QtWin32/lib/libstdc++-6.dll
-  File /home/michael/QtWin32/lib/libwinpthread-1.dll
+  File $$PWD/lib/QtCore4.dll
+  File $$PWD/lib/QtGui4.dll
+  File $$PWD/lib/QtOpenGL4.dll
+  File $$PWD/lib/QtSvg4.dll
+  File $$PWD/lib/QtDeclarative4.dll
+  File $$PWD/lib/QtGui4.dll
+  File $$PWD/lib/QtNetwork4.dll
+  File $$PWD/lib/QtScript4.dll
+  File $$PWD/lib/QtSql4.dll
+  File $$PWD/lib/QtXml4.dll
+  File $$PWD/lib/QtXmlPatterns4.dll
+  File $$PWD/libs/qwt/bin/qwt.dll
+  File $$PWD/libs/qjson/bin/qjson.dll
+  File $$PWD/lib/libgcc_s_sjlj-1.dll
+  File $$PWD/lib/libstdc++-6.dll
+  File $$PWD/lib/libwinpthread-1.dll
 
 SectionEnd
 

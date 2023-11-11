@@ -6,7 +6,7 @@ TEMPLATE = lib
 TARGET = core
 DEPENDPATH += .
 INCLUDEPATH += .
-LIBS += -L/home/michael/QtWin64/lib
+LIBS += -L$$PWD/lib
         win32:QMAKE_LFLAGS += -shared
 QMAKE_LFLAGS += -static-libgcc -static-libstdc++
 # Input
